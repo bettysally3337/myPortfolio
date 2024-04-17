@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  overflow-x: hidden;
+}
+body nav {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+body nav ul {
+  display: flex;
+}
+body nav ul li {
+  list-style-type: none;
+  margin: 1rem;
+}
+body nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+body nav ul li a:hover {
+  color: #fb0e7d;
+  border-bottom: 3px solid #fb0e7d;
+}
+body main section.main-area {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body main section.main-area div.info {
+  flex-basis: 450px;
+  padding: 1rem;
+}
+body main section.main-area div.info h1 {
+  font-size: 3.5rem;
+}
+body main section.main-area div.info h2 {
+  font-size: 1rem;
+}
+body main section.main-area div.info a {
+  color: white;
+  background-color: #fb0e7d;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 29px;
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+body main section.main-area div.info a:hover {
+  transform: scale(1.1);
+}
+body main section.main-area div.img-area {
+  flex-basis: 450px;
+}
+body main section.main-area div.img-area img {
+  width: 90%;
+  height: 90%;
+}
+body main section.about-me {
+  background-color: #fec3de;
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+body main section.about-me section.description {
+  width: 50%;
+  text-align: center;
+}
+body main section.about-me section.description h2 {
+  font-size: 2rem;
+}
+body main section.about-me section.description .progress-bar-area .progress .progress-java {
+  --bs-progress-bar-bg: none;
+  background-color: #fb0e7d !important;
+}
+body main section.about-me section.description .progress-bar-area .progress .progress-database {
+  --bs-progress-bar-bg: none;
+  background-color: #00cecb !important;
+}
+body main section.about-me section.description .progress-bar-area .progress .progress-web {
+  --bs-progress-bar-bg: none;
+  background-color: #fb0e7d !important;
+}
+body main section.about-me section.description .progress-bar-area p {
+  margin-top: 1rem;
+}
+body main section.resume {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+body main section.resume section.table {
+  flex: 5 0 500px;
+  padding: 2rem;
+}
+body main section.resume section.table table {
+  --bs-table-bg: none;
+  border-collapse: collapse;
+}
+body main section.resume section.table table tr {
+  border-bottom: 2px solid #00cecb;
+  transition: all 0.2s ease;
+}
+body main section.resume section.table table tr:hover {
+  background-color: #8cdfd6;
+}
+body main section.resume section.table table tr td {
+  padding: 1rem;
+}
+body main section.resume section.picture {
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body main section.resume section.picture img {
+  width: 80%;
+}
+body main section.resume section.picture div.pinkgraphic {
+  width: 30vw;
+  height: 90vh;
+  border: 8px solid #fb0e7d;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  z-index: -1;
+}
+body main section.resume section.picture div.pinkgraphic2 {
+  width: 30vw;
+  height: 50vh;
+  border: 8px solid #fb0e7d;
+  position: absolute;
+  top: 10px;
+  left: -400px;
+  z-index: -1;
+}
+body main section.resume section.picture div.pinkgraphic3 {
+  width: 45vw;
+  height: 60vh;
+  border: 8px solid #fb0e7d;
+  position: absolute;
+  top: 10vw;
+  left: 300px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  body main section.about-me section.description {
+    width: 80%;
+  }
+  body main section.resume {
+    overflow-x: auto;
+  }
+  body main section.resume section.picture div.pinkgraphic,
+  body main section.resume section.picture div.pinkgraphic2,
+  body main section.resume section.picture div.pinkgraphic3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  body nav ul {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

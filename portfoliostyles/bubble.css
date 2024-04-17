@@ -1,0 +1,116 @@
+#background-wrap {
+  /* 泡泡是在background-wrap的div裡，設定位置固定不變 */
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  /* 讓泡泡在所有東西上方，由於整個網頁上方是background-wrap，無法點擊網頁的任何東西 */
+  z-index: 10;
+  /* 讓滑鼠跟background-wrap沒有關聯，這樣就可以點到網頁的東西 */
+  pointer-events: none;
+}
+
+.bubble {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  /* 泡泡外部有黑色陰影，內部則是白色陰影 */
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2),
+    inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+}
+
+/* 做泡泡由下而上的動畫 */
+@keyframes animatebubble {
+  0% {
+    margin-top: 1000px;
+  }
+  100% {
+    margin-top: -100%;
+  }
+}
+
+/* 設定泡泡左右搖擺的動畫*/
+@keyframes sideways {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+.x1 {
+  /* 泡泡會由下往上，花25秒，funcation是linear，並且會
+    不斷重複 */
+  /* 泡泡左右兩邊會從左到右從右到左，alternate代表動畫會返著放 */
+  animation: animatebubble 30s linear infinite,
+    sideways 2s ease-in-out infinite alternate;
+  left: -10%;
+  top: 5%;
+  transform: scale(0.6);
+}
+.x2 {
+  animation: animatebubble 25s linear infinite,
+    sideways 3s ease-in-out infinite alternate;
+  left: 10%;
+  top: 5%;
+  transform: scale(0.6);
+}
+.x3 {
+  animation: animatebubble 12s linear infinite,
+    sideways 2s ease-in-out infinite alternate;
+  left: 75%;
+  top: 20%;
+  transform: scale(0.3);
+}
+.x4 {
+  animation: animatebubble 23s linear infinite,
+    sideways 9s ease-in-out infinite alternate;
+  left: 40%;
+  top: 70%;
+  transform: scale(0.9);
+}
+.x5 {
+  animation: animatebubble 29s linear infinite,
+    sideways 1s ease-in-out infinite alternate;
+  left: 60%;
+  top: 0%;
+  transform: scale(0.2);
+}
+.x6 {
+  animation: animatebubble 19s linear infinite,
+    sideways 4s ease-in-out infinite alternate;
+  left: 60%;
+  top: 10%;
+  transform: scale(0.5);
+}
+.x7 {
+  animation: animatebubble 20s linear infinite,
+    sideways 5s ease-in-out infinite alternate;
+  left: 30%;
+  top: 10%;
+  transform: scale(0.3);
+}
+.x8 {
+  animation: animatebubble 17s linear infinite,
+    sideways 2s ease-in-out infinite alternate;
+  left: 50%;
+  top: 40%;
+  transform: scale(0.5);
+}
+.x9 {
+  animation: animatebubble 15s linear infinite,
+    sideways 7s ease-in-out infinite alternate;
+  left: 70%;
+  top: 5%;
+  transform: scale(0.4);
+}
+.x10 {
+  animation: animatebubble 13s linear infinite,
+    sideways 2s ease-in-out infinite alternate;
+  left: 90;
+  top: 30%;
+  transform: scale(0.6);
+}
