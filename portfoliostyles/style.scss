@@ -226,3 +226,28 @@ body {
     }
   }
 }
+
+section.contact {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  section.table {
+    flex: 5 0 500px;
+    padding: 2rem;
+    // border: #fb0e7d solid 0.5rem;
+    table {
+      --bs-table-bg: none;
+      border-collapse: collapse;
+      tr {
+        border-bottom: 2px solid $themeColortiff1;
+        transition: all 0.2s ease;
+        &:hover {
+          background-color: $themeColorpink3;
+        }
+        td {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
