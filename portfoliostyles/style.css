@@ -184,26 +184,33 @@ body main section.resume section.picture div.pinkgraphic3 {
     flex-direction: column;
   }
 }
-section.contact {
+section.contact,
+section.websites {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
 }
-section.contact section.table {
+section.contact section.table,
+section.websites section.table {
   flex: 5 0 500px;
   padding: 2rem;
 }
-section.contact section.table table {
+section.contact section.table table,
+section.websites section.table table {
   --bs-table-bg: none;
   border-collapse: collapse;
 }
-section.contact section.table table tr {
+section.contact section.table table tr,
+section.websites section.table table tr {
+  border-top: 2px solid #00cecb;
   border-bottom: 2px solid #00cecb;
   transition: all 0.2s ease;
 }
-section.contact section.table table tr:hover {
+section.contact section.table table tr:hover,
+section.websites section.table table tr:hover {
   background-color: #fec3de;
 }
-section.contact section.table table tr td {
+section.contact section.table table tr td,
+section.websites section.table table tr td {
   padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

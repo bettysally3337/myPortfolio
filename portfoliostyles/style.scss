@@ -227,7 +227,8 @@ body {
   }
 }
 
-section.contact {
+section.contact,
+section.websites {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
@@ -239,6 +240,7 @@ section.contact {
       --bs-table-bg: none;
       border-collapse: collapse;
       tr {
+        border-top: 2px solid $themeColortiff1;
         border-bottom: 2px solid $themeColortiff1;
         transition: all 0.2s ease;
         &:hover {
