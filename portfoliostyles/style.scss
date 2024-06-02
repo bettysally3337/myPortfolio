@@ -257,25 +257,28 @@ section.websites {
 //presentation.html
 
 section#show-presentation {
-  border: 5px solid purple;
   display: flex;
   height: 500vh;
-
+  margin: 0px 2vw;
+  border-top: 3px solid $themeColortiff1;
   div.presentation-buttons {
-    border: 5px solid black;
     width: 15%;
+    border-right: 3px solid $themeColortiff1;
     button {
       background-color: white;
-      margin-top: 3px;
-      border: 3px solid $themeColorpink1;
+      margin-top: 5px;
+      border: none;
+      border-top: 3px solid $themeColorpink1;
+      border-bottom: 3px solid $themeColorpink1;
+      width: 100%;
       &:hover {
-        background-color: #8cdfd6;
+        background-color: $themeColortiff2;
       }
     }
   }
 
   div.embed-div {
-    border: 5px solid red;
+    padding: 4px 4px;
     width: 85%;
     height: 100%;
     embed {
