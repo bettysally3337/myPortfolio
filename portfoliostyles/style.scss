@@ -253,3 +253,34 @@ section.websites {
     }
   }
 }
+
+//presentation.html
+
+section#show-presentation {
+  border: 5px solid purple;
+  display: flex;
+  height: 500vh;
+
+  div.presentation-buttons {
+    border: 5px solid black;
+    width: 15%;
+    button {
+      background-color: white;
+      margin-top: 3px;
+      border: 3px solid $themeColorpink1;
+      &:hover {
+        background-color: #8cdfd6;
+      }
+    }
+  }
+
+  div.embed-div {
+    border: 5px solid red;
+    width: 85%;
+    height: 100%;
+    embed {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

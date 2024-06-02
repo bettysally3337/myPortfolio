@@ -213,4 +213,31 @@ section.websites section.table table tr:hover {
 section.contact section.table table tr td,
 section.websites section.table table tr td {
   padding: 1rem;
+}
+
+section#show-presentation {
+  border: 5px solid purple;
+  display: flex;
+  height: 500vh;
+}
+section#show-presentation div.presentation-buttons {
+  border: 5px solid black;
+  width: 15%;
+}
+section#show-presentation div.presentation-buttons button {
+  background-color: white;
+  margin-top: 3px;
+  border: 3px solid #fb0e7d;
+}
+section#show-presentation div.presentation-buttons button:hover {
+  background-color: #8cdfd6;
+}
+section#show-presentation div.embed-div {
+  border: 5px solid red;
+  width: 85%;
+  height: 100%;
+}
+section#show-presentation div.embed-div embed {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
